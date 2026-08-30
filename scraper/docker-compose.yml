@@ -1,0 +1,9 @@
+services:
+
+  scraper_api:
+    build: .
+    container_name: scraper_api
+    ports:
+      - "5000:5000"
+    extra_hosts:
+      - "host.docker.internal:host-gateway"
